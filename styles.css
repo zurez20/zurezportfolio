@@ -1,11 +1,15 @@
 :root {
   background-color: #000000;
-  color: #ffffff;
-  font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  /* color: #ffffff; */
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
+
 body {
+  background-color: #000000;
   margin: 0;
   padding: 30px;
 }
@@ -16,7 +20,7 @@ nav {
   background-color: black; /* Set background color to black */
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 130px;
+  font-size: 150px;
   justify-content: space-between; /* Space out links */
   align-items: center; /* Vertically align links */
   padding: 15px 30px; /* Add padding inside the navbar */
@@ -26,14 +30,18 @@ nav {
 
 /* Navbar links styling */
 nav a {
-  color: green; /* Text color for links */
+  color: rgb(100, 156, 209); /* Text color for links */
   text-decoration: none; /* Remove underline */
-  padding: 10px 15px; /* Add padding around links */
-  font-size: 16px;
+  padding: 10px 1px; /* Add padding around links */
+  font-size: 19px;
 }
 
 /* Hover effect on navbar links */
 nav a:hover {
+  background-color: #333; /* Darken background on hover */
+  color: yellow; /* Change text color on hover */
+}
+h1 a:hover {
   background-color: #333; /* Darken background on hover */
   color: yellow; /* Change text color on hover */
 }
