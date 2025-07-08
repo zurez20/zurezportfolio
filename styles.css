@@ -1,59 +1,31 @@
 :root {
-  background-color: #000000;
-  /* color: #ffffff; */
+  background-color: #000;
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
 }
 
-
 body {
-  background-color: #000000;
+  background-color: #000;
   margin: 0;
   padding: 30px;
 }
 
-/* Ai */
-/* Navbar styling */
-nav {
-  background-color: black; /* Set background color to black */
-  display: flex;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150px;
-  justify-content: space-between; /* Space out links */
-  align-items: center; /* Vertically align links */
-  padding: 15px 30px; /* Add padding inside the navbar */
-  list-style: none; /* Remove bullet points if using <ul> */
-  margin: 0; /* Remove margin around navbar */
-}
-
-/* Navbar links styling */
 nav a {
-  color: rgb(100, 156, 209); /* Text color for links */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 1px; /* Add padding around links */
-  font-size: 19px;
+  color: rgb(166, 67, 248);
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Hover effect on navbar links */
 nav a:hover {
-  background-color: #333; /* Darken background on hover */
-  color: yellow; /* Change text color on hover */
-}
-h1 a:hover {
-  background-color: #333; /* Darken background on hover */
-  color: yellow; /* Change text color on hover */
+  color: rgb(16, 100, 100);
+  text-decoration: underline;
 }
 
-/* Optional: Add some responsiveness (mobile-friendly) */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.main-text {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
-  nav a {
-    padding: 8px 12px;
-  }
+.my-section{
+  height: 60vh;
 }
