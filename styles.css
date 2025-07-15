@@ -1,31 +1,77 @@
 :root {
-  background-color: #000;
-  font-family: "Playfair Display", serif;
+  /* Main color Dark to White */
+  --main-bg-color-black: #000; /* Black */
+  --main-bg-color-900: #0A0903 ; /* darkest */
+  --main-bg-color-700: #BCD8B7;
+  --main-bg-color-500: #9FCC2E; /* base / default */
+  --main-bg-color-300: ;
+  --main-bg-color-100: ; /* lightest */
+  --main-bg-color-white: #fff; /* White */
+  --main-font-family: "Playfair Display", serif;
+  /* --secondry-font-family: "Playfair Display", serif; */
 }
 
 body {
-  background-color: #000;
-  margin: 0;
-  padding: 30px;
+  background-color: var(--main-bg-color-900);
+}
+
+.logo-text{
+color: var(--main-bg-color-500);
+}
+
+.navbar-text{
+  font-weight: 600;
 }
 
 nav a {
-  color: rgb(166, 67, 248);
+  color: var(--main-bg-color-700);
   text-decoration: none;
   font-size: 17px;
 }
 
 nav a:hover {
-  color: rgb(16, 100, 100);
-  text-decoration: underline;
+  color: var(--main-bg-color-500);
+  /* text-decoration: underline; */
 }
 
-.main-text {
-  color: #fff;
+.main-section{
+  height: 29.3rem;
+}
+
+/* Base button styles */
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 4px;
+  padding: 0.9em 1.8em;
+  text-decoration: none;
   text-align: center;
-  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 150ms ease-in-out;
 }
 
-.my-section{
-  height: 60vh;
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+/* Button with 'third' class */
+.btn.third {
+  border-color: var(--main-bg-color-700); /* replaced $blue */
+  color: #fff;
+  box-shadow: 0 0 40px 40px var(--main-bg-color-700) inset, 0 0 0 0 var(--main-bg-color-700);
+}
+
+.btn.third:hover {
+  box-shadow: 0 0 10px 0 var(--main-bg-color-700) inset, 0 0 10px 4px var(--main-bg-color-500);
 }
