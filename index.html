@@ -15,11 +15,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
+   <!-- Loading Screen -->
 
-<body class="container text-white">
+<body id="body" class="container text-white">
+    <div id="loading-screen">
+        <span><i>Zurez..</i></span>
+    </div>
+    <div id="loading-finish" style="display: none;">
     <div class="py-3">
         <div class="row align-items-center">
-            <h1 class="logo-text col-md-6">Zurez.</h1>
+            <h1 class="logo-text col-md-6"><i>Zurez.</i></h1>
             <nav class="navbar-text col-md-6 d-none d-md-flex px-5 justify-content-end align-items-center gap-4">
                 <a href="#">Home</a>
                 <a href="#">About Me</a>
@@ -33,11 +38,12 @@
     <section class="main-section d-flex justify-content-center align-items-center my-5 my-section">
         <div class="row">
             <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-                <h2 class="text-center">Hello, I am <span style="color: aquamarine;">Zurez</span></h2>
-                <p class="text-center px-4 py-2">
-                    A Web developer with a passion for creating dynamic and responsive websites. I specialize in
-                    front-end development, using the latest technologies to build user-friendly interfaces. My goal is
-                    to deliver high-quality web solutions that meet the needs of my clients.
+                <div class="main-heading text-center">Hello, I am <span class="main-zurez"><i>Zurez</i></span></div>
+                <p class="text-center px-4 py-2 main-text">
+                    A <span style="color: #9fcc2e;">Web Developer</span> with a strong focus on both front-end and back-end development.
+                    I build dynamic, responsive, and user-centric web applications using modern technologies.
+                    With experience in creating scalable backend systems and intuitive front-end interfaces,
+                    my goal is to deliver robust and maintainable web solutions tailored to client needs.
                 </p>
             </div>
             <div class="col-md-6 d-flex align-items-center justify-content-center">
@@ -47,12 +53,19 @@
             </div>
         </div>
     </section>
+</div>
     <!-- <section class="about-me">
         <h1>I am a good boy</h1>
     </section> -->
 
 
-
+    <script>
+        // Set a timeout to hide the loading screen after 2 seconds
+        setTimeout(function () {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('loading-finish').style.display = 'block';
+        }, 2000); // 2000ms = 2 seconds
+    </script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
