@@ -89,7 +89,7 @@ nav a:hover {
   margin: 4px;
   padding: 0.8em 1.6em;
   text-decoration: none;
-  text-align: center;
+  text-align:   center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   transition: all 150ms ease-in-out;
