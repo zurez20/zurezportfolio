@@ -18,7 +18,7 @@ body {
 }
 
 .my-section {
-  height: 75vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,4 +175,28 @@ nav a:hover {
   line-height: 1.5;
   color: var(--main-bg-color-800);
   margin: 1rem 0;
+}
+.custom-border-technology {
+  border-color: var(--main-bg-color-500) !important;
+  box-shadow: 0 0 5px 0 var(--main-bg-color-500) inset,
+    0 0 5px 1px var(--main-bg-color-500);
+}
+
+.tech-heading {
+  font-size: 2.3rem;
+  font-family: var(--main-font-family);
+}
+
+.tech-subheading {
+  font-size: 0.9rem;
+  font-style: italic;
+    animation: x 1s linear infinite;
+}
+
+#technology{
+  height: 85vh;
+  color: white !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
