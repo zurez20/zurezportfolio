@@ -23,7 +23,7 @@ body {
 }
 
 .my-section {
-  height: 75vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,4 +202,13 @@ nav a:hover {
 .tech-subheading {
   font-size: 0.9rem;
   font-style: italic;
+    animation: x 1s linear infinite;
+}
+
+#technology{
+  height: 85vh;
+  color: white !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
